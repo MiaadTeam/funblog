@@ -1,0 +1,22 @@
+POST http://localhost:8000/funql HTTP/1.1
+Content-type: application/json
+token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzkxNDI2MDIuOTg4LCJ1c2Vyc0lkIjoiNjBjNjA3YTMxZDk5NmUzZGNjYjg4OTgzIn0.teNpimOili33VNofZ_l7t9ujxLMzuGU6A-iZFT4cdB909Ijr1shGofUvNhZjEMv90MxelMbjyosgrBe4ON1dQA
+
+{
+    "details":{
+        "set":{
+            "_id":"60c892a26b1e6a3888e46459",    
+            "role":"Admin"
+        },
+        "get":{
+            "_id":1
+           
+
+        }
+    },
+
+    "wants":{
+        "model":"User",
+        "doit":"updateUserRole"
+    }
+}

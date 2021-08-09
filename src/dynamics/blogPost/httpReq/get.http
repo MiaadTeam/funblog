@@ -1,0 +1,32 @@
+POST http://localhost:8000/funql HTTP/1.1
+content-type: application/json
+token:eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzMzMzY0MDMuMzYzLCJ1c2Vyc0lkIjoiNjA2ZDZmNDBjNDAwZGY5YzlkNDU4ZjI5In0.Erl-YOCWtlEfIJx5CwQr1INK4zm9d8rAGBfTyQeFrTVJhAbboIdbN8jghTops64lmO6_rq7Npyf9FqCjwa9HmQ
+
+{
+    "contents":"dynamic",
+    "details":{
+        "set":{
+            "_id":"60cf59ae47eddd3cf9c5b4ef"
+        },
+        "get":{
+
+            "comments":{
+                "_id": 1,
+                "content":1
+                ,
+             
+                "user":{
+                    "name":1,
+                    "lastName":1,
+                    "email":1,
+                    "addresses":1
+                }
+            }
+
+        }
+    },
+    "wants":{
+        "model":"BlogPost",
+        "doit":"getBlogPost"
+    }
+}

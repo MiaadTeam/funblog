@@ -1,0 +1,28 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run mod.ts",
+      "desc": "run my app.ts file",
+      "allow": ["plugin", "net", "read", "write", "env"],
+      "unstable": true,
+      "watch": true
+    }
+  },
+  "watcher": {
+    "interval": 350,
+    "match": [
+      "./src/**/*.ts",
+      "./mod.ts",
+      "./scripts.json",
+      "./redis.ts",
+      "./db.ts"
+    ],
+    "skip": ["*/.git/*"],
+    "legacy": false
+  },
+  "logger": {
+    "debug": true,
+    "fullscreen": true
+  }
+}

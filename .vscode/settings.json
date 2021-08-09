@@ -1,0 +1,10 @@
+{
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": false,
+    "https://es": false,
+    "https://esm.": false,
+    "https://esm.sh": false,
+    "https://e": false,
+    "https://esm": false
+  }
+}

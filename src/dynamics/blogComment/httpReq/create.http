@@ -1,0 +1,32 @@
+
+POST http://localhost:8000/funql HTTP/1.1
+content-type: application/json
+token:eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAyNDQxODEuMDIzLCJ1c2Vyc0lkIjoiNjBkMWNkYTI3OGUzZjkwNTU4OTRlMDI3In0.t0JqV-lflf99RYgEEVy2m_MmW_k8XLSr6jQZpeUMmZbjmS4tZA4-GJYimF0z_8KUr_EoKQABzTaX6RV-3IrSDQ
+
+{
+    "contents":"dynamic",
+    "details":{
+        "set":{
+
+            "content":"third comment",
+            "blogCommentStatus":"ACCEPT",
+            "blogPostId":"60cf59ae47eddd3cf9c5b4f0"
+            # "parentId":"60ca071ac71c99703822fb32"
+            
+   
+            
+        },
+        "get":{
+            # "blogCommentStatus":1,
+            # "content":1,
+            # "user":{
+            #     "name":1,
+            #     "email":1
+            # }
+        }
+    },
+    "wants":{
+        "model":"Comment",
+        "doit":"createComment"
+    }
+}

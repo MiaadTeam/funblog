@@ -1,0 +1,37 @@
+POST http://localhost:8000/funql HTTP/1.1
+Content-type: application/json
+token:eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mzk3NTE1MjkuMjIyLCJ1c2Vyc0lkIjoiNjBjZjUxNmUwNTlmODU3YWU3Yjc3ODQ3In0.AR0T-5gziKr9s_QeQ6i8Yh3d0cyfsb_UUajqAc54yj8fnpSHS-13i5nU3lm8yrEnrSFkzRGmH-2-n7xOBeUf0w
+
+{
+    "details":{
+        "set":{
+            "userId":"60cf516e059f857ae7b77847",    
+            "name":"user1",
+            "lastName":"lastName1",
+            "gender":"MALE",
+            "birthDate":1618037628351,
+            "postalCode":"22",
+            "email":"masi@gmail.com",
+            "creditCardNumber":1234567891234568,
+            "addresses":
+                {"country":"60cf514fd041401b890c932a",
+                "state":"60cf514fd041401b890c9333",
+                "city":"60cf514fd041401b890c933d",
+                "addressTxt":"this is first object"
+                }
+                
+                
+        },
+        "get":{
+            "_id":1,
+            "name":1,
+            "creditCardNumber":1
+
+        }
+    },
+
+    "wants":{
+        "model":"User",
+        "doit":"updateUser"
+    }
+}

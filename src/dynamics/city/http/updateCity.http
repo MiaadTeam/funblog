@@ -1,0 +1,25 @@
+POST http://localhost:6000/funql HTTP/1.1
+content-type: application/json
+token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmQ1ZjFiNjJmOTc5Njc5NzJlMmViOTAifQ.D_FFtNuxoA3MrgzYSKAJ4o3H_4MsiOwuxuDSu8Xz9E4GlNEtRuk-t0s12A6a7Oxj61G7faVdWWpjMkdW2A9soQ
+
+{
+    "details": {
+        "set": {
+            "_id":"60716181a4e5a480c9194398",
+            "name": "qom",
+            "enName": "jolfa",
+            "stateId":"60713fd961715888274ca65d"
+            #"geometries": [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+        },
+        "get": {
+            "_id": 0
+            #"name": 1,
+            #"enName":1,
+            #"geometries":1
+        }
+    },
+    "wants": {
+        "model": "City",
+        "doit": "updateCity"
+    }
+}
